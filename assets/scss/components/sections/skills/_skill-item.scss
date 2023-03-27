@@ -4,12 +4,13 @@
 .skill-item {
   position: relative;
   background-color: $color-primary;
-  background-image: url(../img/img-header.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
 
   &__image {
+    background-color: $color-primary;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     @include abs-position;
   }
 }

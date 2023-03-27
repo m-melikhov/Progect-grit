@@ -526,10 +526,6 @@ a {
   position: relative;
 
   background-color: #2d3651;
-  background-image: url(../img/img-header.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .skill-item__image {
   position: absolute;
@@ -537,6 +533,11 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
+
+  background-color: #2d3651;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .skill-item:nth-of-type(1).skill-item__image {
