@@ -15,14 +15,31 @@ html {
 
 body {}
 
+@mixin lg-min {
+  @media (min-width:$lg) {
+    @content;
+  }
+}
+
 h1 {
-  font-size: 3.75rem;
   letter-spacing: 0.08em;
   color: $color-light;
   font-weight: 300;
   font-family: $font-header;
   text-align: center;
   line-height: 1.2;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+
+  @include md {
+    font-size: 1.875rem;
+  }
 }
 
 a {
